@@ -1,4 +1,3 @@
-#define BLYNK_PRINT Serial
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
@@ -28,7 +27,7 @@ void setup() {
 
   // Initialize the Blynk library
   Blynk.begin(auth, ssid, pass, "blynk.jpnet.co.th", 8080);
-  Serial.println("DDDD");
+  Serial.println("CONNECTED");
 }
 
 BLYNK_WRITE(V0) {
